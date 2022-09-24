@@ -1,5 +1,7 @@
 [requires]
-
+openal/1.22.2
+audiofile/1.1.0
+libsamplerate/0.2.2
 
 [generators]
 cmake
