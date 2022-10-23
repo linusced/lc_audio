@@ -70,7 +70,7 @@ namespace lc_audio
     T frequency(int octave, int midiNoteID)
     {
         T _1 = 27.5L, _2 = 1.0594630943592953L;
-        return (_1 * std::pow((T)2.0L, (T)(octave - 1))) * std::pow(_2, (T)midiNoteID);
+        return (_1 * std::pow((T)2.0L, (T)octave)) * std::pow(_2, (T)midiNoteID);
     }
 
     static int midiNoteID(const std::string &note)
