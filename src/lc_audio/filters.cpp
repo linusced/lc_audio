@@ -2,7 +2,7 @@
 
 float lc_audio::filter_a1(float frequency, unsigned int sampleRate)
 {
-    constexpr float f_pi = (float)M_PI;
+    constexpr float f_pi = (float)std::numbers::pi;
     float _tan = std::tan(f_pi * frequency / sampleRate);
     return (_tan - 1.0f) / (_tan + 1.0f);
 }
