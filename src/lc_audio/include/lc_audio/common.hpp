@@ -11,6 +11,7 @@
 #include <filesystem>
 #include <unordered_map>
 #include <algorithm>
+#include <numbers>
 
 #include <OpenAL/al.h>
 #include <OpenAL/alc.h>
@@ -57,7 +58,7 @@ namespace lc_audio
     template <typename T>
     T angularVelocity(T frequency)
     {
-        return (T)M_PI * (T)2.0L * frequency;
+        return (T)std::numbers::pi * (T)2.0L * frequency;
     }
 
     template <typename T>
